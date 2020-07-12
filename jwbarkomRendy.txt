@@ -1,0 +1,45 @@
+Ujian Akhir Semester
+Nama : Rendy Renaldhy
+NIM    : 311710266
+Matkul : Arsitektur dan organisasi Komputer
+Kelas : TI.17.D4
+Universitas Pelita Bangsa
+2020
+
+1.	Dalam arsitektur komputer ada 4 komponen Utama CPU, Sebutkan dan jelaskan kegunanaanya?
+Jawab :
+•	Unit kontrol yang mengatur jalannya program. Komponen ini tentu ada di semua CPU. CPU bertugas mengontrol komputer sehingga sinkronisasi yang terjadi antara komponen bekerja dalam menjalankan fungsi operasi. termasuk tanggung jawab unit kontrol ialah mengambil perintah, instruksi dari memori utama dan menentukan jenis instruksi.
+•	Register adalah perangkat penyimpanan kecil yang memiliki akses ke kecepatan yang cukup tinggi, yang digunakan untuk menyimpan data dan / atau instruksi yang sedang diproses. Memori ini bersifat sementara, biasanya digunakan untuk menyimpan data saat diolah atau data untuk diproses lebih lanjut.
+•	Unit ALU berfungsi untuk melakukan operasi aritmetika dan operasi logika berdasar instruksi yang ditentukan. ALU sering disebut bahasa mesin dikarenakan pada bagian ini ALU terdiri dari dua bagian, arithmetika satuan dan boolean unit logika, yang masing-masing memiliki spesifikasi pekerjaan sendiri.
+•	CPU Interconnections Adalah sistem koneksi dan bus yang menghubungkan komponen internal CPU, yaitu ALU, unit kontrol dan register-register dan juga dengan bus-bus eksternal CPU yang menghubungkan dengan system lainnya. Seperti memori utama, piranti masukkan/keluaran.
+
+2.	Control Unit adalah bagian dari komputer yang menggenerasi signal yang mengontrol operasi komputer, sebutkan jenis apa saja yang termasuk Control Unit?
+Jawab :
+•	Multi-cycle CUA Unit kontrol yang multi-cycle lebih memiliki banyak fungsi. Dengan memperhatikan state dan opcode, fungsi boolean dari masing-masing outputcontrol line dapat ditentukan. Masing-masingnya akan menjadi fungsi dari 10 buah input logic. Jadi akan terdapat banyak fungsi boolean, dan masing-masingnya tidak sederhana. Pada cycle ini, sinyal kontrol tidak lagi ditentukan dengan melihat pada bit-bit instruksinya. Bit-bit opcode memberitahukan operasi apa yang selanjutnya akan dijalankan CPU, bukan instruksi cycle selanjutnya. 
+•	Single-cycle CUA Proses di CUl ini hanya terjadi dalam satu clock cycle, artinya setiap instruksi ada pada satu cycle, maka dari itu tidak memerlukan state. Dengan demikian fungsi boolean masing-masing control line hanya merupakan fungsi dari opcode saja. Clock cycle harus mempunyai panjang yang sama untuk setiap jenis instruksi. Ada dua bagian pada unit kontrol ini, yaitu proses men-decodeopcode untuk mengelompokkannya menjadi 4 macam instruksi (yaitu di gerbang AND), dan pemberian sinyal kontrol berdasarkan jenis instruksinya (yaitu gerbang OR). Keempat jenis instruksi adalah “R-format” (berhubungan dengan register), “lw” (membaca memori), “sw” (menulis ke memori), dan “beq” (branching). Sinyal kontrol yang dihasilkan bergantung pada jenis instruksinya. Misalnya jika melibatkan memori ”R-format” atau ”lw” maka akan sinyal ”Regwrite” akan aktif. Hal lain jika melibatkan memori “lw” atau “sw” maka akan diberi sinyal kontrol ke ALU, yaitu “ALUSrc”. Desain single-cycle ini lebih dapat bekerja dengan baik dan benar tetapi cycle ini tidak efisien.
+
+3.	Set instruksi (instruction set) adalah sekumpulan lengkap instruksi yang dapat di mengerti oleh sebuah CPU. Set instruksi sering juga disebut sebagai bahasa mesin . sebutkan macam-macam format Instruksi?
+Jawab :
+
+Format	Instruksi
+Op Code Alamat
+• Kode Operasi (Op Code) direpresentasikan dengan singkatan-singkatan yang disebut mnemonic.
+• Contoh Mnemonic
+o ADD = Penambahan
+o SUBB = Pengurangan
+o LOAD = Muatkan data ke memori
+
+4.	Direct Memory Access (DMA) adalah suatu metode transfer data dari memori komputer atau RAM ke suatu bagian dari komputer tanpa memprosesnya menggunakan CPU. Sebutkan kelebihan menggunakan DMA ?
+Jawab :
+
+Kelebihan menggunakan DMA :
+?	Dapat menghemat waktu memproses
+?	Cara yang lebih efisien untuk memindahkan data dari memori ke alat lainnya
+?	CPU tidak terbebani oleh programmed I/O
+
+5.	Pipeline adalah mesin yang melaksanakan beberapa komputasi yang berbeda secara bersama-sama ,namun pada saat itu setiap komputasi akan berada dalam tahapan eksekusi yang berbeda. Sebutkan dua kategori Pipeline ?
+Jawab :
+•	Pipeline Unit Arithmetic Berguna untuk operasi vector
+•	Pipeline Unit Instruction Berguna untuk komputer yang mempunyai set instruksi yang sederhana
+
+
